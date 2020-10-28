@@ -5,7 +5,9 @@ import java.util.EnumSet;
 import javax.faces.webapp.FacesServlet;
 import javax.servlet.DispatcherType;
 
+import org.apache.log4j.Logger;
 import org.ocpsoft.rewrite.servlet.RewriteFilter;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,13 +20,20 @@ import tn.esprit.spring.config.LoginFilter;
 @SpringBootApplication
 @EnableAutoConfiguration
 public class TimesheetApplication {
+	private static final Logger l = Logger.getLogger(TimesheetApplication.class);
 
 	public static void main(String[] args) {SpringApplication.run(TimesheetApplication.class, args);}
-
+	
+	
+	
 	@Bean
 	public ServletRegistrationBean servletRegistrationBean() {
 		FacesServlet servlet = new FacesServlet();
-		return new ServletRegistrationBean(servlet, "*.jsf"); }
+		return new ServletRegistrationBean(servlet, "*.jsf");
+		
+		
+		
+		}
 
 	@Bean
 	public FilterRegistrationBean rewriteFilter() {
