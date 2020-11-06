@@ -13,7 +13,7 @@
  
 	<groupId>tn.esprit.spring</groupId>
 	<artifactId>timesheet</artifactId>
-	<version>3.0</version>
+	<version>3.1</version>
 	<name>timesheet</name>
 	<description>timesheet</description>
 	<packaging>jar</packaging>
