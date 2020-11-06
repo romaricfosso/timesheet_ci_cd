@@ -5,7 +5,7 @@ import java.util.List;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
-import javax.validation.constraints.Pattern;
+//import javax.validation.constraints.Pattern;
 
 import org.ocpsoft.rewrite.annotation.Join;
 import org.ocpsoft.rewrite.el.ELBeanName;
@@ -48,7 +48,7 @@ public class ControllerEmployeImpl  {
 	private List<Employe> employes; 
 
 	private Integer employeIdToBeUpdated; // getter et setter
-
+    
 
 	public String doLogin() {
 

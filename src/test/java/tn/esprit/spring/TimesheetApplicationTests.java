@@ -8,6 +8,10 @@ class TimesheetApplicationTests {
 
 	@Test
 	void contextLoads() {
+	/*	String val ="romaric";
+		TimesheetApplication tim= new TimesheetApplication ();
+		FilterRegistrationBean log =tim.loginFilter();
+	  assertEquals("/page/*", log);*/
 	}
 
 }
