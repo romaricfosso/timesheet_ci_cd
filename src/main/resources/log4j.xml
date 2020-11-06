@@ -19,7 +19,7 @@
 	<!-- append=false: pour écraser les anciens logs près chaque redémarrage -->
 	<appender name="file" class="org.apache.log4j.RollingFileAppender">
 		<param name="append" value="true" />
-		<param name="maxFileSize" value="1KB" />
+		<param name="maxFileSize" value="5Mo" />
 		<param name="maxBackupIndex" value="10" />
 		<param name="file" value="C:/Users/romaric/Documents/workspace-sts-3.9.4.RELEASE/log/formation/log4j-demo.log" />
 		<layout class="org.apache.log4j.PatternLayout">
